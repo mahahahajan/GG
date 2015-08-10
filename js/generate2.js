@@ -83,5 +83,20 @@ window.onload = function () {
      console.log(randomPun);
      generate.innerHTML = randomPun;
     }
+    //Quotes
+    if(randomValue == "Inspirational Quotes"){
+      var myQuotes = ['Just Do It', 'Don"t let your dreams be dreams', 'Don"t do tomorrow what you can do today', 'Try to be a rainbow in someone cloud.', 'Don"t Stop Believing', 'Live in the Hall of Fame', 'Success is 10 percent inspiration and 90 percent perspiration.', 'Build your own dreams, or someone else will hire you to build theirs', 'The best revenge is massive success.'];
+      var randomQuote = myQuotes[Math.floor(Math.random() * myQuotes.length)];
+     console.log(randomQuote);
+     generate.innerHTML = randomQuote;
+    }
+    //Songs
+    //Insults
+    if(randomValue == "Songs"){
+      var mySongs = ['Stand By Me', 'Count on me', 'Grenade', 'The A Team', 'Thinking out Loud', 'Demons', 'Warriors', 'Radioactive', 'Centuries', 'Immortals'];
+      var randomSong = mySongs[Math.floor(Math.random() * mySongs.length)];
+     console.log(randomSong);
+     generate.innerHTML = randomSong;
+    }
   }
 }
