@@ -24,6 +24,10 @@ window.onload = function () {
 
  document.body.appendChild(generate);
 
+document.getElementById('button2').onclick = function (){
+  window.location.reload();
+}
+
  //do if statements
   document.getElementById('button').onclick = function (){
 
