@@ -13,7 +13,7 @@ window.onload = function () {
 	}
 	changeBackground();
   var myTopics = ['Baby Names', 'Shows', 'Pranks', 'Ideas',
- 'Insults', 'Comebacks', "Your Mom Jokes", "Puns", "Inspirational Quotes", "Sentences", "Songs"];
+ 'Insults', 'Comebacks', 'Your Mom Jokes', 'Puns', 'Inspirational Quotes', 'Songs'];
   var randomValue = myTopics[Math.floor(Math.random() * myTopics.length)];
  console.log(randomValue);
  var name = document.createElement("h1");
@@ -62,11 +62,26 @@ window.onload = function () {
      console.log(randomInsult);
      generate.innerHTML = randomInsult;
     }
-    if(randomValue == "Insults"){
-      var myInsults = ['You are dumb', 'Idiot', 'Fatty', 'Stupid', 'Shorty', 'You are such a Gary', 'Ugly', 'Loser', 'Retarded'];
-      var randomInsult = myInsults[Math.floor(Math.random() * myInsults.length)];
-     console.log(randomInsult);
-     generate.innerHTML = randomInsult;
+    //Comebacks
+    if(randomValue == "Comebacks"){
+      var myComebacks = ['We got a problem? Solve it', 'Too bad', 'No one cares', 'I could eat alphabet soup and crap out something better than that', 'Were you born near a freeway? Cause thats where most accidents happen', 'Congrats, you smarter than a rock', 'Oh no, you have hurt my feelings.', 'Takes one to know one'];
+      var randomComeback = myComebacks[Math.floor(Math.random() * myComebacks.length)];
+     console.log(randomComeback);
+     generate.innerHTML = randomComeback;
+    }
+    //Your Mom Jokes
+    if(randomValue == "Your Mom Jokes"){
+      var myUrMomJokes = ['Yo momma is so fat, I took a picture of her last Christmas and it still printing.', 'Yo momma is so fat when she got on the scale it said, "I need your weight not your phone number."', 'Yo momma is so fat that when she went to the beach a whale swam up and sang, "We are family, even though you"re fatter than me."', 'Yo mamma is so ugly when she tried to join an ugly contest they said, "Sorry, no professionals."', 'Yo momma so fat and old when God said', '"Let there be light," he asked your mother to move out of the way.'];
+      var randomMomJoke = myUrMomJokes[Math.floor(Math.random() * myUrMomJokes.length)];
+     console.log(randomMomJoke);
+     generate.innerHTML = randomMomJoke;
+    }
+    //Puns
+    if(randomValue == "Puns"){
+      var myPuns = ['Orange you glad...', 'Lettuce go....', 'What do you call a alligator in a vest? An investigator', 'I"m emotionally constipated. I haven"t given a shit in days.', 'I can"t believe I got fired from the calendar factory. All I did was take a day off.', 'How did I escape Iraq? Iran.', 'What was Forrest Gumps email password? "1forrest1"', 'Why was Cinderella thrown off the basketball team? She ran away from the ball.', 'For Sale: Parachute. Only used once, never opened.'];
+      var randomPun = myPuns[Math.floor(Math.random() * myPuns.length)];
+     console.log(randomPun);
+     generate.innerHTML = randomPun;
     }
   }
 }
