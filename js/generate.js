@@ -1,7 +1,5 @@
 window.onload = function () {
-  document.getElementById('button').onclick = function (){
-      document.open("secondPage.html");
-  }
+
 	function changeBackground() {
 	    var color = getRandomColor();
 	   document.body.style.background = color;

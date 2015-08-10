@@ -1,6 +1,19 @@
 window.onload = function () {
+  function changeBackground() {
+	    var color = getRandomColor();
+	   document.body.style.background = color;
+	}
+	function getRandomColor() {
+	    var letters = '0123456789ABCDEF'.split('');
+	    var color = '#';
+	    for (var i = 0; i < 6; i++ ) {
+	        color += letters[Math.floor(Math.random() * 16)];
+	    }
+	    return color;
+	}
+	changeBackground();
   var myTopics = ['Baby Names', 'Shows', 'Pranks', 'Ideas',
-'Dogs', 'Cats', 'Insults', 'Comebacks', "Your Mom Jokes", "Puns", "Inspirational Quotes", "Sentences", "Songs"];
+ 'Insults', 'Comebacks', "Your Mom Jokes", "Puns", "Inspirational Quotes", "Sentences", "Songs"];
   var randomValue = myTopics[Math.floor(Math.random() * myTopics.length)];
  console.log(randomValue);
  var name = document.createElement("h1");
@@ -32,17 +45,28 @@ window.onload = function () {
     if(randomValue == "Pranks"){
       var myPranks = ['Psych', 'How I Met Your Mother', 'Mr.Robot', 'Silicon Valley', 'Arrow', 'Flash', 'Agents of SHIELD', 'Goldbergs', 'Blackish'];
       var randomPrank = myPranks[Math.floor(Math.random() * myPranks.length)];
-     console.log(randomShow);
+     console.log(randomPrank);
      generate.innerHTML = randomPrank;
     }
     //Ideas
-    {
       if(randomValue == "Ideas"){
         var myIdeas = ['USB Belt', 'Wrist Keyboard', 'Chain Mail Texter', 'Text Message Game', 'Online Chat', 'Game of speed'];
         var randomIdea = myIdeas[Math.floor(Math.random() * myIdeas.length)];
-       console.log(randomShow);
+       console.log(randomIdea);
        generate.innerHTML = randomIdea;
       }
+    //Insults
+    if(randomValue == "Insults"){
+      var myInsults = ['You are dumb', 'Idiot', 'Fatty', 'Stupid', 'Shorty', 'You are such a Gary', 'Ugly', 'Loser', 'Retarded'];
+      var randomInsult = myInsults[Math.floor(Math.random() * myInsults.length)];
+     console.log(randomInsult);
+     generate.innerHTML = randomInsult;
+    }
+    if(randomValue == "Insults"){
+      var myInsults = ['You are dumb', 'Idiot', 'Fatty', 'Stupid', 'Shorty', 'You are such a Gary', 'Ugly', 'Loser', 'Retarded'];
+      var randomInsult = myInsults[Math.floor(Math.random() * myInsults.length)];
+     console.log(randomInsult);
+     generate.innerHTML = randomInsult;
     }
   }
 }
