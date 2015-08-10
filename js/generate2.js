@@ -36,7 +36,7 @@ window.onload = function () {
     }
     //Shows
     if(randomValue == "Shows"){
-      var myShows = ['Psych', 'How I Met Your Mother', 'Mr.Robot', 'Silicon Valley', 'Arrow', 'Flash', 'Agents of SHIELD', 'Goldbergs', 'Blackish'];
+      var myShows = ['Psych', 'How I Met Your Mother', 'Mr.Robot', 'Silicon Valley', 'Arrow', 'Flash', 'Agents of SHIELD', 'Goldbergs', 'Blackish', 'The Fosters'];
       var randomShow = myShows[Math.floor(Math.random() * myShows.length)];
      console.log(randomShow);
      generate.innerHTML = randomShow;
